@@ -20,4 +20,5 @@ int main()
     struct myArr marks;
     CreateArr(&marks, 10, 5);
     printf(&marks);
+    printf(&marks);
 }
