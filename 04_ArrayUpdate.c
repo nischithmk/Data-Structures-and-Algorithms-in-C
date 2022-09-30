@@ -9,7 +9,7 @@ for (int i = 0; i < size; i++)
 printf("\n");
 }
 
-
+//update
 int update(int arr[],int element, int index,int size){
 
     if(index>=size || index<0) return -1;
