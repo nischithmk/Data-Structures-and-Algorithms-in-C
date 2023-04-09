@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 struct myArr
 {
@@ -8,8 +8,9 @@ struct myArr
     int *ptr;
 };
 
-void createArr(struct myArr * arr){
-    
+void createArr(struct myArr *arr)
+{
+
     int tSize, uSize;
     printf("Enter size of the array to create : ");
     scanf("%d", &tSize);
@@ -21,24 +22,27 @@ void createArr(struct myArr * arr){
     arr->ptr = (int *)malloc(tSize * sizeof(int));
 }
 
-void showArr(struct myArr * arr){
+void showArr(struct myArr *arr)
+{
     for (int i = 0; i < arr->used_size; i++)
     {
         printf("%d\n", arr->ptr[i]);
     }
 }
 
-void setArr(struct myArr * arr){
+void setArr(struct myArr *arr)
+{
     int n;
     for (int i = 0; i < arr->used_size; i++)
     {
-        printf("Enter the value for %dth position : ",i);
+        printf("Enter the value for %dth position : ", i);
         scanf("%d", &n);
         arr->ptr[i] = n;
-    } 
+    }
 }
 
-int sumArr(struct myArr * arr){
+int sumArr(struct myArr *arr)
+{
     int sum_arr = 0;
     for (int i = 0; i < arr->used_size; i++)
     {
